@@ -6,11 +6,12 @@
   width:950px;
 }
 
-hr.horizontal-rule {
-border:none;
-border-top: 3px solid;
-color: #4d5bf9;
+ hr.horizontal-rule {
+ border:none;
+ border-top: 3px solid;
+ color: #4d5bf9;
 }
+
 h2 {
   font-size: clamp(26px,5vw, 25px);
   color: #0800FA;
@@ -39,8 +40,10 @@ p {
   .exemple{
     font-weight: bolder;
   }
-  .lighter h2{
-    font-family: 'Merriweather', serif;
+  
+  table .lighter{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: lighter;
   }
 
   .lighter{
@@ -48,7 +51,6 @@ p {
     text-align: left;
     font-family: 'Ubuntu', sans-serif;
 }
-
 
   .enphase-2 {
     text-decoration-line:underline;
@@ -102,7 +104,9 @@ flex-wrap: nowrap;
  .firstTable th,
  .firstTable td{
   padding: 15px 15px;
-  font-family:'Libre Caslon Text', serif;
+  font-size: clamp(17px,3.5vw, 18px);
+  font-family: 'Merriweather', serif;
+  font-weight:bold;
   border: 1px solid #dddddd;
 }
 
@@ -114,14 +118,11 @@ flex-wrap: nowrap;
 .firstTable{box-shadow: 0 0 20px rgba(0,0,0,0.15);}
 
 .headingTogether {
-text-decoration: line-through;
+ text-decoration: line-through;
 }
 
 .headingTogether-2 {
-text-align: left;
-}
-.bolderTogether{
-
+ text-align: left;
 }
 
  table .td-element{
@@ -183,7 +184,6 @@ hr{
   display:none;
 }
 
-
 }
 @media (orientation:portrait) and (min-width: 600px){
  .lighter-translated{
@@ -207,9 +207,36 @@ hr{
     padding: 0;
   }
 }
+
+/****breaking sentences*****/
+@media (min-width: 550px){
+ .VerbosPrespositionaisFrasais-cut-3{
+   display: none;
+ }
+}
+@media (min-width: 682px){
+ .table-3-4{
+   display: none;
+ }
+}
+@media (min-width: 570px){
+ .tableOfExplanation-cut-1{
+   display: none
+ }
+}
+@media (min-width: 569px){
+  .formality-taBLE{
+    display: none;
+  }
+}
 @media (min-width: 451px){
   .VerbosPrespositionaisFrasaisEverbosFrasais-cut-1{
     display:none;
+  }
+}
+@media (min-width: 432px){
+  .{
+    display: none;
   }
 }
 @media (min-width: 406px){
@@ -219,6 +246,11 @@ hr{
   .VerbosFrasaisEobjetos-cut-1{
     display: none;
   }
+}
+@media (min-width: 340px){
+ .tableOfExplanation-cut-2{
+   display: none;
+ }
 }
 @media (min-width: 334px){
   .cut-the-word-5{
@@ -294,6 +326,7 @@ hr{
 }
 body{
   line-height: 1.7;
+  font-family: 'Poppins', sans-serif;
 }
 *{
 	margin:0;
